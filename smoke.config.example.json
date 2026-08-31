@@ -1,0 +1,22 @@
+{
+  "_설명": "이 파일을 smoke.config.json으로 복사한 뒤 본인 값으로 채우세요. smoke.config.json은 gitignore되어 커밋되지 않습니다.",
+  "customLlm": {
+    "apiUrl": "https://api.example.com/v1/chat/completions 또는 https://generativelanguage.googleapis.com/v1beta",
+    "apiKey": "sk-... (여러 개면 줄바꿈 \\n 으로 구분)",
+    "model": "모델명"
+  },
+  "auxiliaryLlm": {
+    "_설명": "보조(경량) LLM. 비우면 customLlm으로 폴백",
+    "apiUrl": "",
+    "apiKey": "",
+    "model": ""
+  },
+  "embeddingEnabled": true,
+  "embeddingEndpoint": "https://api.openai.com/v1/embeddings 등",
+  "embeddingApiKey": "",
+  "embeddingModel": "text-embedding-3-small",
+  "rerankerEndpoint": "",
+  "rerankerApiKey": "",
+  "rerankerModel": "",
+  "maxRetries": 1
+}

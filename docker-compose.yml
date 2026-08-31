@@ -1,0 +1,12 @@
+services:
+  omninode-server:
+    build: .
+    container_name: omninode-server
+    restart: unless-stopped
+    ports:
+      - "8756:8756"
+    volumes:
+      - ./data:/data
+    # 토큰을 직접 지정하려면 주석 해제 (미지정 시 최초 기동에서 자동 생성되어 ./data/auth-token에 저장됨)
+    # environment:
+    #   OMNINODE_TOKEN: change-me-to-a-long-random-string

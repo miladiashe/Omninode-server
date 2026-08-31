@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.release/
+data/
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+.env
+.DS_Store
+smoke.config.json
+
+# 타인 저작 플러그인 원본 — 레포에 커밋하지 않음
+reference/
